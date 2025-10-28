@@ -24,4 +24,5 @@ for($i = 1; $i < strlen($firstString); $i++){
 }
 
 // Obtendo o resultado final
-print_r($lcs_table);
+$result = $lcs_table[strlen($firstString) - 1][strlen($secondString) - 1];
+echo "O comprimento da Longest Common Subsequence é: " . ($result + 1) . "\n";
